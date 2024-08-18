@@ -1,9 +1,9 @@
 <script setup>
-  defineProps({
-    coworking: {
-      type: Object
-    }
-  })
+defineProps({
+  coworking: {
+    type: Object
+  }
+})
 </script>
 
 <template>
@@ -12,7 +12,8 @@
       :to="{ name: 'coworking', params: { id: coworking.id }}"
       class="hover-zoom"
     >
-      <v-img :src="coworking.imagen" height="250" cover class="image-filter" />
+      <!-- Mostrar la primera imagen del array `imagenes` si existe -->
+      <v-img :src="coworking.imagenes && coworking.imagenes.length > 0 ? coworking.imagenes[0] : 'placeholder.jpg'" height="250" cover class="image-filter" />
 
       <v-card-title class="font-weight-bold mt-3">
         {{ coworking.titulo }}
