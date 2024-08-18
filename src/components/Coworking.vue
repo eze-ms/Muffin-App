@@ -18,9 +18,16 @@ defineProps({
       <v-card-title class="font-weight-bold mt-3">
         {{ coworking.titulo }}
       </v-card-title>
-      <v-card-text>
+      <div>
+        <v-card-text class="pb-0">
         {{ coworking.barrio }}
       </v-card-text>
+
+      <v-card-text class="pt-2 font-weight-bold">
+        {{ coworking.provincia }}
+      </v-card-text>
+      </div>
+     
     </v-card>
   </v-col>
 </template>
