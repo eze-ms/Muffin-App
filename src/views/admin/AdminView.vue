@@ -1,8 +1,8 @@
 <script setup>
-  import useCoworkings from '@/composables/useCoworkings'
-  import { coworkingPrice } from '@/helpers'
+import useCoworkings from '@/composables/useCoworkings'
+import { coworkingPrice } from '@/helpers'
 
-  const { coworkingsCollection, deleteItem } = useCoworkings()
+const { coworkingsCollection, deleteItem } = useCoworkings()
 </script>
 
 <template>
@@ -11,7 +11,7 @@
   <v-btn
     color="blue"
     variant="flat"
-    :to="{name: 'nuevo-coworking'}"
+    :to="{ name: 'nuevo-coworking' }"
   >
     Nuevo Coworking
   </v-btn>
@@ -25,7 +25,12 @@
         <!-- Slot for Image -->
         <template v-slot:prepend>
           <v-list-item-media :start="true">
-            <img width="180" :src="coworking.imagen" alt="imagen_coworking" />
+            <!-- Mostrar la primera imagen del array de imágenes -->
+            <img 
+              width="180" 
+              :src="coworking.imagenes && coworking.imagenes.length > 0 ? coworking.imagenes[0] : ''" 
+              alt="imagen_coworking" 
+            />
           </v-list-item-media>
         </template>
 
@@ -41,14 +46,14 @@
             color="deep-purple-lighten-2"
             variant="flat"
             class="mr-2"
-            :to="{name: 'editar-coworking', params: { id: coworking.id }}"
+            :to="{ name: 'editar-coworking', params: { id: coworking.id }}"
           >
             Editar
           </v-btn>
           <v-btn 
             color="red-lighten-2"
             variant="flat"
-            @click="deleteItem(coworking.id, coworking.imagen)"
+            @click="deleteItem(coworking.id, coworking.imagenes ? coworking.imagenes[0] : '')"
           >
             Eliminar
           </v-btn>
