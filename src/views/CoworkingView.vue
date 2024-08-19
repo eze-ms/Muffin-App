@@ -67,7 +67,6 @@
         </div>
 
         <v-row class="text-espacio">
-          
           <v-col cols="12" md="8">
             <div class="py-10 bordered-bottom mb-5">
               <p class="text-h5 font-weight-bold mb-3 text-espacio">Acerca del espacio</p>
@@ -111,30 +110,31 @@
         </v-row>
       </v-container>
     </template>
-
   </v-card>
-   <!-- Footer -->
-   <v-card flat class="py-6 d-flex flex-column align-center">
-      <v-container>
-        <Footer />
-      </v-container>
-    </v-card>
+
+  <!-- Footer -->
+  <v-card flat class="py-6 d-flex flex-column align-center">
+    <v-container>
+      <Footer />
+    </v-container>
+  </v-card>
 </template>
 
 <style scoped>
+  .title-text {
+    font-family: 'Jost', sans-serif;
+  }
 
+  .bordered-container {
+    border: 1px solid #d8d8d8;
+    font-family: "Work Sans", sans-serif;
+  }
 
-.title-text {
-  font-family: 'Jost', sans-serif;
-}
-.bordered-container {
-  border: 1px solid #d8d8d8;
-  font-family: "Work Sans", sans-serif;
-}
-.text-espacio {
-  font-family: "Work Sans", sans-serif;
-}
-.bordered-bottom {
-  border-bottom: 1px solid #d8d8d8;
-}
+  .text-espacio {
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .bordered-bottom {
+    border-bottom: 1px solid #d8d8d8;
+  }
 </style>

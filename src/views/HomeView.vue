@@ -90,7 +90,6 @@ const filteredCoworkings = computed(() => {
           </v-col>
         </v-row>
 
-
         <v-row>
           <Coworking 
             v-for="coworking in filteredCoworkings" 
@@ -109,7 +108,6 @@ const filteredCoworkings = computed(() => {
     </v-card>
   </main>
 </template>
-
 
 <style scoped>
   .header-image {
@@ -194,4 +192,3 @@ const filteredCoworkings = computed(() => {
     }
   }
 </style>
-
