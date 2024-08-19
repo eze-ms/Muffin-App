@@ -15,15 +15,15 @@ defineProps({
       <!-- Mostrar la primera imagen del array `imagenes` si existe -->
       <v-img :src="coworking.imagenes && coworking.imagenes.length > 0 ? coworking.imagenes[0] : 'placeholder.jpg'" height="250" cover class="image-filter" />
 
-      <v-card-title class="font-weight-bold mt-3">
+      <v-card-title class="font-weight-bold mt-3 cow-title">
         {{ coworking.titulo }}
       </v-card-title>
       <div>
-        <v-card-text class="pb-0">
+        <v-card-text class="pb-0 cow-barrio">
         {{ coworking.barrio }}
       </v-card-text>
 
-      <v-card-text class="pt-2 font-weight-bold">
+      <v-card-text class="pt-2 font-weight-bold cow-city">
         {{ coworking.provincia }}
       </v-card-text>
       </div>
@@ -44,5 +44,12 @@ defineProps({
 
 .hover-zoom:hover .image-filter {
   filter: none; /* Eliminar el filtro al hacer hover */
+}
+.cow-title {
+  font-family: 'Jost', sans-serif;
+}
+.cow-barrio,
+.cow-city {
+  font-family: "Work Sans", sans-serif
 }
 </style>

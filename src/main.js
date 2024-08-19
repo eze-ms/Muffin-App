@@ -22,7 +22,17 @@ const app = createApp(App)
 // Vuetify
 const vuetify = createVuetify({
   components,
-  directives
+  directives,
+  theme: {
+    defaultTheme: 'light',
+    themes: {
+      light: {
+        variables: {
+          fontFamily: 'Jost, sans-serif' // Configurar Jost como la fuente principal
+        }
+      }
+    }
+  }
 })
 
 // Firebase

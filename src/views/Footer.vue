@@ -7,14 +7,14 @@
 <template>
     <v-footer
       padless
-      class="footer"
+      class="footer py-0"
     >
         <v-col
             cols="12"
-            class="text-center py-4"
+            class="text-center"
         >
         <span class="text-white text-caption text-grey-darken-1">
-          Esta web es un proyecto personal sin ánimo de lucro. Todos los derechos reservados &copy; {{ currentYear }}.
+          Esta sitio es un proyecto personal sin fines de lucro. Todos los derechos reservados &copy; {{ currentYear }}.
         </span>
       </v-col>
     </v-footer>
