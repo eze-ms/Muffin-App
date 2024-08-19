@@ -152,7 +152,7 @@
 
 <template>
   <v-card max-width="800" flat class="mx-auto my-10">
-    <v-card-title class="text-h4 font-weight-black text-black" tag="h3">
+    <v-card-title class="text-h4 font-weight-black text-black pt-10" tag="h3">
       ¡Crea tu nuevo coworking!
     </v-card-title>
 

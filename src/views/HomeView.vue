@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'; // Importar computed desde Vue
+import { computed } from 'vue'
 import useCoworkings from '@/composables/useCoworkings'
 import Coworking from '@/components/Coworking.vue'
 import Footer from './Footer.vue'
@@ -141,9 +141,7 @@ const filteredCoworkings = computed(() => {
   }
 
   .header-content {
-    z-index: 1;
     width: 50%;
-    max-width: 800px;
   }
   .header-select {  
     margin-right: 0;
