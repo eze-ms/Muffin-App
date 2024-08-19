@@ -7,7 +7,7 @@ import { coworkingPrice } from '@/helpers'
 const { coworkingsCollection, deleteItem, provincia, filteredItems } = useCoworkings()
 
 // Ciudades disponibles en el selector
-const ciudades = ['Todos', 'Amsterdam', 'Barcelona', 'Berlin', 'Islas Canarias', 'Londres', 'Lisboa', 'Madrid', 'Paris']
+const ciudades = ['Todos', 'Amsterdam', 'Barcelona', 'Berlin', 'Islas Canarias', 'Londres', 'Lisboa', 'Madrid', 'Rotterdam']
 
 // Filtrado basado en la provincia seleccionada
 const filteredCoworkings = computed(() => {

@@ -6,7 +6,7 @@
 
 <template>
   <v-app>
-    <v-app-bar color="white" fixed app>
+    <v-app-bar color="white px-4" fixed app>
       <template v-slot:prepend>
         <v-btn :to="{name: 'home'}">Muffin</v-btn>
       </template>

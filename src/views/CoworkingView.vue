@@ -34,7 +34,7 @@
     
     <template v-else>
       <!-- Imagen principal a todo el ancho -->
-      <v-img :src="coworking.imagenes?.[0]" height="300" cover />
+      <v-img :src="coworking.imagenes?.[0]" height="350" cover />
 
       <!-- Contenedor con el contenido principal -->
       <v-container>

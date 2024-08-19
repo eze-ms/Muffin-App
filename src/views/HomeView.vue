@@ -7,7 +7,7 @@ import Footer from './Footer.vue'
 const { provincia, filteredItems, coworkingsCollection } = useCoworkings()
 
 // Añadir la opción "Todos" para mostrar todos los coworkings
-const ciudades = ['Todos', 'Amsterdam', 'Barcelona', 'Berlin', 'Islas Canarias', 'Londres', 'Lisboa', 'Madrid', 'Paris']
+const ciudades = ['Todos', 'Amsterdam', 'Barcelona', 'Berlin', 'Islas Canarias', 'Londres', 'Lisboa', 'Madrid', 'Rotterdam']
 
 // Actualizar el comportamiento para que muestre todos los coworkings si la provincia es "Todos" o está vacía
 const filteredCoworkings = computed(() => {
