@@ -69,7 +69,6 @@ export const useAuthStore = defineStore('auth', () => {
     return authUser.value !== null; //* Retorna true si authUser contiene información del usuario
   });
 
-
   return {
     login, 
     logout, 
