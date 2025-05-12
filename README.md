@@ -102,7 +102,7 @@ git clone https://github.com/eze-ms/Muffin-App
 
 ```
 
-### Instalar dependencias del backend
+### Instalar dependencias
 ```bash
 npm install
 ```
